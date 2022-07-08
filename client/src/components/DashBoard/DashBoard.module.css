@@ -1,0 +1,26 @@
+.main{
+    flex: 1;
+    height: 100%;
+ background: rgba( 40, 39, 41, 0.7 );
+backdrop-filter: blur( 9px );
+-webkit-backdrop-filter: blur( 9px );
+display: flex;
+flex-direction: column;
+gap: 20px;
+padding: 0 10px;
+}
+.main__header{
+    height: 55px;
+    text-align: start;
+    padding: 10px 15px;
+    color: rgba( 255, 255, 255, 0.7 );
+}
+.main__report{
+   background: white;
+border-radius: 10px;
+}
+.main__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}

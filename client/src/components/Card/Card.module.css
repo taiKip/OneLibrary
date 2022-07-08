@@ -1,0 +1,96 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.card {
+  display: inline-block;
+  position: relative;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  background-color: rgb(255, 255, 255);
+  padding: 6px;
+}
+.card__img {
+  height: 60%;
+  animation: fadeIn 1s;
+}
+.card__description {
+  background-image: linear-gradient(0deg, #3f5efb, #ec6f88);
+  border-radius: 20px;
+  position: absolute;
+  top: 60%;
+  left: -5px;
+  height: 65%;
+  width: 112%;
+  transform: skew(19deg, -9deg);
+}
+.card__controls {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  top: 63%;
+}
+.card__controls h4 {
+  font-size: 1em;
+}
+.card__view {
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  
+}
+.card__view:hover {
+  background-color: rgb(213, 47, 255);
+  color: white;
+  transform: scale(1.2);
+}
+.card__view a {
+  text-decoration: none;
+  color: inherit;
+}
+.card__cart {
+  position: absolute;
+  top: 40%;
+  right: 16px;
+  font-size: 2em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.card__cart:hover{
+color: rgb(213, 47, 255);
+transform: scale(1.2);
+}
+.card__status {
+  position: absolute;
+  top: 5%;
+  left: 14px;
+  cursor: pointer;
+  font: inherit;
+  padding: 5px 10px;
+  background-color: rgba(77, 226, 28, 0.993);
+  color: black;
+  border-radius: 10px;
+}
+.card:nth-of-type(even) .card__description {
+  background-image: linear-gradient(-20deg, #bb7413, #e7d25c);
+}
+.borrowed {
+  background-color: #bb7413;
+}
+.hide {
+  display: none;
+}
