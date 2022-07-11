@@ -5,4 +5,4 @@ export const EMAIL_REGEX = new RegExp(
 export const PWD_REGEX = new RegExp(
   "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{6,12}$"
 );
-export const NAME_REGEX = new RegExp("^[A-z][A-z0-9-_]{3,23}$");
+export const NAME_REGEX = new RegExp("^[A-z][A-z0-9-_]{2,23}$");

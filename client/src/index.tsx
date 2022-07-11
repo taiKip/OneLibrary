@@ -9,8 +9,8 @@ import { store } from './app/store'
 import { fetchAuthors } from './features/authors/authorSlice'
 import { fetchCategories } from './features/categories/categoriesSlice';
 //fetch when app loads
-store.dispatch(fetchCategories());
-store.dispatch(fetchAuthors()); 
+// store.dispatch(fetchCategories());
+// store.dispatch(fetchAuthors()); 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
